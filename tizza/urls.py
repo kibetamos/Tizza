@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.urls import include, path
 from django.contrib.auth.views import LoginView, LogoutView
 
-from pizza.routers import router as pizza_router
+# from pizza.routers import router as pizza_router
 
 
 urlpatterns = [

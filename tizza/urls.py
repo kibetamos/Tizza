@@ -13,5 +13,5 @@ urlpatterns = [
     path('login/', LoginView.as_view()),
     path('logout/', LogoutView.as_view()),
 
-    path('', include(pizza_router.urls)),
+    # path('', include(pizza_router.urls)),
 ]

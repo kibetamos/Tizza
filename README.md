@@ -1,3 +1,1 @@
 ### A python Microservice project
-
-

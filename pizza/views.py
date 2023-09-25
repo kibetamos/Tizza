@@ -23,19 +23,19 @@ from django.views import View
 from .models import Pizza
 
 
-def index(request, pid):
-    pizza = Pizza.objects.get(id=pid)
-    return HttpResponse(
-        content={
-            'id': pizza.id,
-            'title': pizza.title,
-            'description': pizza.description,
-        }
-    )
+# def index(request, pid):
+#     pizza = Pizza.objects.get(id=pid)
+#     return HttpResponse(
+#         content={
+#             'id': pizza.id,
+#             'title': pizza.title,
+#             'description': pizza.description,
+#         }
+#     )
 
 
 @login_required
-def protected_index(request, pid):
+def index(request, pid):
     if request.method == 'POST':
         data = json.loads(request.body)
         new_pizza = Pizza.objects.create(

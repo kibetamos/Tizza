@@ -1,18 +1,3 @@
-# from django.shortcuts import render
-# from django.http import HttpResponse
-# from .models import Pizza
-
-
-# def index(request, pid):
-#     pizza = Pizza.objects.get(id=pid)
-#     return HttpResponse(
-#         content={
-#             'id': pizza.id,
-#             'title': pizza.title,
-#             'description': pizza.description,
-#         }
-#     )
-# # Create your views here.
 import json
 
 from django.contrib.auth.decorators import login_required
@@ -23,19 +8,19 @@ from django.views import View
 from .models import Pizza
 
 
-# def index(request, pid):
-#     pizza = Pizza.objects.get(id=pid)
-#     return HttpResponse(
-#         content={
-#             'id': pizza.id,
-#             'title': pizza.title,
-#             'description': pizza.description,
-#         }
-#     )
+def index(request, pid):
+    pizza = Pizza.objects.get(id=pid)
+    return HttpResponse(
+        content={
+            'id': pizza.id,
+            'title': pizza.title,
+            'description': pizza.description,
+        }
+    )
 
 
 @login_required
-def index(request, pid):
+def protected_index(request, pid):
     if request.method == 'POST':
         data = json.loads(request.body)
         new_pizza = Pizza.objects.create(

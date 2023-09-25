@@ -8,12 +8,13 @@ from django.contrib.auth.views import LoginView, LogoutView
 urlpatterns = [
 
     path('admin/', admin.site.urls),
+    
     path('pizzas/', include('pizza.urls')),
 
     path('user/', include('user.urls')),
-    path('login/', LoginView.as_view()),
-    path('logout/', LogoutView.as_view()),
 
-    # path('', include(pizza_router.urls)),
+    path('login/', LoginView.as_view()),
+
+    path('logout/', LogoutView.as_view()),
 
 ]

@@ -2,4 +2,20 @@
 
 {% block content %}
 
-<h2>Loo at all the Pizzas! </h2>
+<h2>Look at all the Pizzas! </h2>
+
+<table>
+    <th>
+        <td>Name</td>
+        <td>DEscription</td>
+    </th>
+    {% for pizza in pizzas %}
+
+    <tr>
+        <td>{{ pizza.title }}</td>
+        <td>{{ pizza.description }}</td>
+
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

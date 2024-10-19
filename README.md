@@ -29,10 +29,24 @@ Follow these steps to set up the project on your local machine:
 2. **Install the required dependencies**:
      Make sure you have Python and Django installed on your system. You can download the latest version from the official Python website here. After that, install the required packages:
    
+      ```bash
    pip install -r requirements.txt
+3. **Enable a virtual environment (optional but recommended):**
+         ```bash
+   python -m venv myenv
+   source myenv/bin/activate  # On macOS/Linux
+   myenv\Scripts\activate  # On Windows
 
 
-Make sure you have Python and Django installed on your system. You can download the latest version from the official Python website here. After that, install the required packages:
-### Key Points
-- The CI/CD section now highlights the use of GitHub Actions, making it clear that automation is integrated into the project.
-- The workflow YAML is included to give developers insight into how CI/CD is managed for Tizza.
+### Running the Project
+To run the project, execute the following command in your terminal:
+      ```bash
+         python manage.py runserver
+         
+### Accessing the Service
+
+Once the project is running, you can access it in your web browser by navigating to:
+
+```bash
+http://127.0.0.1:8000
+

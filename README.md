@@ -8,6 +8,10 @@ Welcome to Tizza, a Python microservice project designed to provide a lightweigh
 - Scalable and maintainable codebase
 - RESTful API for communication between services
 
+## CI/CD Integration
+Tizza incorporates CI/CD practices to automate testing and deployment, using GitHub Actions. This ensures that every change made to the codebase is automatically tested and validated.
+
+The workflow is triggered on every push to the repository, ensuring that your code is consistently integrated and tested.
 
 ## Technologies Used
 

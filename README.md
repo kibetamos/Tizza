@@ -22,6 +22,7 @@ The workflow is triggered on every push to the repository, ensuring that your co
 
 Follow these steps to set up the project on your local machine:
 
+
 1. **Clone the repository**:
 
    ```bash

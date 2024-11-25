@@ -29,6 +29,7 @@ Follow these steps to set up the project on your local machine:
    git clone https://github.com/kibetamos/Tizza.git
    cd Tizza
 
+
 2. **Install the required dependencies**:
      Make sure you have Python and Django installed on your system. You can download the latest version from the official Python website here. After that, install the required packages:
    
